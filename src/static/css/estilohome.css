@@ -1,0 +1,68 @@
+.logo > img {
+    width: 350px;
+}
+
+.btn_sup {
+
+    width: 60px;
+    height: 30px;
+    background-color: #000000;
+    padding: 15px;
+    padding-top: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+
+#foto_hugo {
+    width: 120px;
+    height: 80px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_pedidos {
+    
+    width: 150px;
+    height: 30px;
+    background-color: #000000;
+    padding: 15px;
+    padding-top: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    border-radius: 20px;
+
+}
+
+.btn_p_servico {
+    
+    width: 150px;
+    height: 50px;
+    background-color: #000000;
+    padding: 15px;
+    padding-top: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    border-radius: 30px;
+
+}
+
+.central_seg {
+    
+    width: 150px;
+    height: 30px;
+    background-color: #000000;
+    padding: 15px;
+    padding-top: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 20px;
+}

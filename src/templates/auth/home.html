@@ -1,0 +1,38 @@
+{% extends '/base.html' %}
+
+{% block title %} Login Cliente {% endblock %}
+
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/estilohome.css')}}">
+{% endblock %}
+
+{% block body %}
+    <div class="btn_sup">
+        <a href="{{ url_for('logout') }}">Sair</a>
+    </div>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='img/goservice.png')}}" alt="">
+    </div>
+    <div class="img_hugo">
+        <img src="{{ url_for('static', filename='img/hugo.png')}}" id="foto_hugo" alt="">
+    </div>
+
+    <div class="conteiner">
+        <div class="boas_vindas">
+            Olá! <strong>{{ current_user.fullname }}</strong> seja bem-vindo!
+        </div>
+        
+        <div class="btn_pedidos">
+            Meus Pedidos
+        </div>
+
+        <div class="btn_p_servico">
+            Precisa de um serviço?
+        </div>
+
+        <div class="central_seg">
+            Central de Segurança
+        </div>
+    </div>
+
+{% endblock %}
