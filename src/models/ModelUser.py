@@ -1,4 +1,4 @@
-from .entities.User import User
+from.entities.User import User
 
 
 
@@ -8,8 +8,7 @@ class ModelUser():
     def login(self, db, user):
         try:
             cursor = db.connection.cursor()
-            sql = """SELECT id, email, password, fullname FROM user
-                         WHERE email = '{}'""".format(user.email)
+            sql = "SELECT id, email, password, fullname FROM user WHERE email = '{}'".format(user.email)
             cursor.execute(sql)
             row = cursor.fetchone()
             if row is not None:

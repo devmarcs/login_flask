@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-from flask_mysqldb import MySQL
+from flaskext import mysql
 from flask_wtf.csrf import CSRFProtect
 from flask_login import LoginManager, login_user, logout_user, login_required
 
@@ -14,7 +14,7 @@ from models.entities.User import User
 
 app = Flask(__name__)
 csrf = CSRFProtect()
-db = MySQL(app)
+db = mysql(app)
 login_manager_app = LoginManager(app)
 
 
